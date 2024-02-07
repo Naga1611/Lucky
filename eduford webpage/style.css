@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.active {
+    color: #fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.navbar {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+.nav-links {
+    display:flex;
+    align-items: center;
+}
+.nav-links li {
+    margin:0 30px;
+    justify-content: center;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/header-bg.png');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+}
+.header-content h2 {
+    font-size: 4vmin;
+}
+.line {
+    width: 150px;
+    height: 4px;
+    background-color: #fc036b;
+    margin:  10px auto;
+    border-radius: 5px;
+}
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ford {
+    padding: 8px 15px;
+    background-color: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+}
+.camp {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}  
+.camp .terk img {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.events .camp {
+    margin-top: 50px;
+}
+h4 {
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+.terk p {
+    color: #7c7c7c;
+    padding: 0px 40px;
+    margin-bottom: 5%;
+}
+.events .ford {
+    margin-top: 30px;
+}
+.explore {
+    width: 100%;
+    height: 80vh;
+    background-image: url('./img/bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.explore-content {
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    justify-content: center;
+}
+.explore-content h1 {
+    font-size: 7vmin;
+    justify-content: center;
+}
+.explore-content .line {
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.explore-content p {
+    color: rgb(221, 221, 221);
+    margin-bottom: 5%;
+    justify-content: center;
+}
+.explore-content .ford {
+    margin-top: 40px;
+}
+.content-terk {
+    width: 40%;
+    justify-content: flex-start;
+}
+.image-terk {
+    width: 60%;
+    justify-content: space-between;
+}
+.tours .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.image-gallery img {
+    width: 250px;
+    margin: 10px;
+}
+.content-terk  h1{
+    font-size: 7vmin;
+    color: #484872;
+}
+.content .terk .line {
+    margin-left: 1px;
+}
+.content-terk p{
+    padding: 0;
+    margin: 30px auto;
+}
+.conent-terk .ford {
+    margin-left: 100px;
+    justify-content: center;
+}
+.footer {
+    width:100%;
+    min-height:200px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+}
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px;
+}
+@media only screen and (max-width: 990px) {
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: 900px;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+    .camp {
+        flex-direction: column;
+    }
+    .camp .terk {
+        margin: 20px auto;
+    }
+    .camp img {
+        max-width: 90%;
+    }
+    .explore-content {
+        width: 100%;
+    }
+    .tours .terk {
+        width: 100%;
+    }
+    .image-galllery {
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallery img {
+       width: 90%;
+    }
+    .footer {
+        padding: 8px;
+    }
+}
